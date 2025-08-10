@@ -1,0 +1,126 @@
+{
+  "bot-name": "EF-PRIME-MD-ULTRA",
+  "description": "EF-PRIME-MD-ULTRA - Advanced WhatsApp Bot with 500+ commands for enhanced group management and entertainment",
+  "logo": "https://files.catbox.moe/sjxqqh.png",
+  "keywords": ["whatsapp", "bot", "ef-prime", "md", "ultra", "advanced", "group-management"],
+  "documentation-link": "https://ef-prime-md-ultra.onrender.com",
+  "owner-verification": "efkidgamer@gmail.com",
+  "repository": "https://github.com/efkidgamerdev/EF-PRIME-MD-ULTRA",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put your session id here after pairing from ef-prime-md-ultra.onrender.com",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Bot owner number with country code (e.g., 265888123456)",
+      "value": "265888123456",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Your bot name",
+      "value": "EF-PRIME-MD-ULTRA",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Bot command prefixes separated by commas (e.g., .,!,+,#)",
+      "value": ".,!,+,#",
+      "required": false
+    },
+    "PACKNAME": {
+      "description": "Sticker pack name",
+      "value": "EF-PRIME-MD",
+      "required": false
+    },
+    "AUTHOR": {
+      "description": "Sticker author name",
+      "value": "FrankKaumbaDev",
+      "required": false
+    },
+    "BOT_NUMBER": {
+      "description": "Bot WhatsApp number (leave empty for auto-detect)",
+      "value": "",
+      "required": false
+    },
+    "TIME_ZONE": {
+      "description": "Your timezone",
+      "value": "Africa/Blantyre",
+      "required": false
+    },
+    "AUTO_READ": {
+      "description": "Auto read messages (true/false)",
+      "value": "false",
+      "required": false
+    },
+    "PUBLIC_MODE": {
+      "description": "Public mode - anyone can use bot (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "PAIRING_CODE": {
+      "description": "Use pairing code instead of QR (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "MY_YOUTUBE": {
+      "description": "Your YouTube channel URL",
+      "value": "https://youtube.com/@efkidgamer",
+      "required": false
+    },
+    "MY_GITHUB": {
+      "description": "Your GitHub profile URL",
+      "value": "https://github.com/efkidgamerdev",
+      "required": false
+    },
+    "MY_GROUP": {
+      "description": "Your WhatsApp group/channel URL",
+      "value": "https://whatsapp.com/channel/0029VbBMv2IDeON5eOz38p1M",
+      "required": false
+    },
+    "MY_CHANNEL": {
+      "description": "Your WhatsApp newsletter/channel ID",
+      "value": "120363319098372999@newsletter",
+      "required": false
+    },
+    "MY_WEBSITE": {
+      "description": "Your website URL",
+      "value": "frankkaumba.gamer",
+      "required": false
+    },
+    "MY_EMAIL": {
+      "description": "Your email address",
+      "value": "efkidgamer@gmail.com",
+      "required": false
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string (optional - uses JSON database by default)",
+      "value": "",
+      "required": false
+    },
+    "PREMIUM_USERS": {
+      "description": "Premium user numbers separated by commas (e.g., 265888123456,265888654321)",
+      "value": "",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "stack": "heroku-22"
+}
