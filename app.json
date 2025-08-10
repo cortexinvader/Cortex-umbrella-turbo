@@ -1,0 +1,88 @@
+{
+  "name": "ef-prime-md-ultra",
+  "description": "EF-PRIME-MD-ULTRA - Advanced WhatsApp Bot Using Baileys Library by FrankKaumbaDev",
+  "repository": "https://github.com/efkidgamerdev/EF-PRIME-MD-ULTRA",
+  "stack": "container",
+  "logo": "https://i.ibb.co/0y87Jy4/ef-prime-logo.png",
+  "keywords": [
+    "whatsapp-bot", 
+    "multi-device", 
+    "ef-prime-md", 
+    "baileys", 
+    "frankkaumbadev",
+    "ef-prime-md-ultra",
+    "advanced-bot"
+  ],
+  "env": {
+    "OWNER_Number": {
+      "description": "Owner phone number(s) - separate multiple numbers with comma (e.g., 265123456789,265987654321)",
+      "required": true,
+      "value": ""
+    },
+    "BOT_NAME": {
+      "description": "Give your bot a cool name",
+      "required": false,
+      "value": "EF-PRIME-MD-ULTRA"
+    },
+    "BOT_NUMBER": {
+      "description": "WhatsApp phone number for pairing code (with country code, no +)",
+      "required": true,
+      "value": "265123456789"
+    },
+    "TIME_ZONE": {
+      "description": "Your timezone (e.g., Africa/Blantyre for Malawi, Africa/Nairobi for Kenya)",
+      "required": false,
+      "value": "Africa/Blantyre"
+    },
+    "PREFIX": {
+      "description": "Bot command prefix(es) - separate multiple with comma (e.g., .,!,#)",
+      "required": true,
+      "value": "."
+    },
+    "HKEY": {
+      "description": "Heroku API Key - Get from https://dashboard.heroku.com/account",
+      "required": true,
+      "value": ""
+    },
+    "HAPP": {
+      "description": "Heroku App Name - Must match your app name exactly",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_NAME": {
+      "description": "Owner's display name",
+      "required": false,
+      "value": "FrankKaumbaDev"
+    },
+    "AUTO_READ": {
+      "description": "Auto read messages (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "PUBLIC_MODE": {
+      "description": "Public or private bot mode (true/false)",
+      "required": false,
+      "value": "true"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
