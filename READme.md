@@ -1,4 +1,4 @@
-# EF-PRIME-MD-V2
+# EF-PRIME-MD-ULTRA 
 
 
 <div align="center">
@@ -39,7 +39,7 @@
 ### 🔄 Step 1: Fork This Repository
 
 <div align="center">
-  <a href="https://github.com/efkidgamerdev/EF-PRIME-MD/fork">
+  <a href="https://github.com/efkidgamerdev/EF-PRIME-MD-ULTRA/fork">
     <img src="https://img.shields.io/badge/FORK-EF_PRIME_MD-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=black" alt="Fork EF-PRIME-MD">
   </a>
 </div>
@@ -47,7 +47,7 @@
 ### 🔑 Step 2: Generate Your Pairing Code
 
 <div align="center">
-  <a href='https://prime2-0pair.onrender.com' target="_blank">
+  <a href='https://ef-prime-md-ultra.onrender.com' target="_blank">
     <img src='https://img.shields.io/badge/GET_PAIRING_CODE-0000FF?style=for-the-badge&logo=keycdn&logoColor=white&labelColor=black' alt='Get Pairing Code'>
   </a>
 </div>
