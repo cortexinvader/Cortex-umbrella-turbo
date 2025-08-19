@@ -42,7 +42,7 @@
     "AUTHOR": {
       "description": "Author name for sticker metadata",
       "required": false,
-      "value": "💎 PRIME TECHNOLOGIES"
+      "value": "💎 Frankkaumbadev"
     },
     "PREFIX": {
       "description": "Allowed command prefixes (comma-separated, no spaces)",
@@ -50,7 +50,7 @@
       "value": "⚡,+,!,.,#,$"
     },
     "TIME_ZONE": {
-      "description": "Your Time Zone (e.g., Africa/Nairobi, UTC)",
+      "description": "Your Time Zone (e.g., Africa/Malawi, UTC)",
       "required": false,
       "value": "UTC"
     },
@@ -67,7 +67,7 @@
     "PRIME_GROUP": {
       "description": "Prime WhatsApp group link",
       "required": false,
-      "value": "https://whatsapp.com/channel/EFPRIMEMD"
+      "value": "https://chat.whatsapp.com/B6yhKpqsUCu9K2QHxvxD2W?mode=ac_t"
     },
     "MONGODB_URI": {
       "description": "MongoDB connection string for database (optional)",
