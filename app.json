@@ -1,68 +1,98 @@
 {
   "name": "ef-prime-md-ultra",
-  "description": "EF-PRIME-MD-ULTRA - Advanced WhatsApp Bot Using Baileys Library by FrankKaumbaDev",
-  "repository": "https://github.com/efkidgamerdev/EF-PRIME-MD-ULTRA",
+  "description": "⚡ EF-PRIME-MD ULTRA - Advanced WhatsApp Bot Using Baileys Library with Quantum Core",
+  "repository": "https://github.com/EF-PRIME-TECH/EF-PRIME-MD-ULTRA",
+  "logo": "https://telegra.ph/file/fe4843a1261fc414542c4.jpg",
   "stack": "container",
-  "logo": "https://i.ibb.co/0y87Jy4/ef-prime-logo.png",
   "keywords": [
-    "whatsapp-bot", 
+    "whatsapp-bot",
     "multi-device", 
-    "ef-prime-md", 
-    "baileys", 
-    "frankkaumbadev",
-    "ef-prime-md-ultra",
-    "advanced-bot"
+    "bot",
+    "whatsapp",
+    "baileys",
+    "ef-prime",
+    "quantum-core"
   ],
   "env": {
-    "OWNER_Number": {
-      "description": "Owner phone number(s) - separate multiple numbers with comma (e.g., 265123456789,265987654321)",
-      "required": true,
+    "SESSION_ID": {
+      "description": "Add your Session ID here if you want to connect via session download",
+      "required": false,
       "value": ""
     },
+    "OWNER_NUMBER": {
+      "description": "List of owner numbers (comma-separated), without '+' sign",
+      "required": true,
+      "value": "265993702468"
+    },
     "BOT_NAME": {
-      "description": "Give your bot a cool name",
+      "description": "Display name of your bot",
       "required": false,
       "value": "EF-PRIME-MD-ULTRA"
     },
     "BOT_NUMBER": {
-      "description": "WhatsApp phone number for pairing code (with country code, no +)",
+      "description": "WhatsApp phone number for pairing code (without '+' sign)",
       "required": true,
-      "value": "265123456789"
+      "value": "265993702468"
     },
-    "TIME_ZONE": {
-      "description": "Your timezone (e.g., Africa/Blantyre for Malawi, Africa/Nairobi for Kenya)",
+    "PACKNAME": {
+      "description": "Sticker pack name",
       "required": false,
-      "value": "Africa/Blantyre"
+      "value": "⚡ EF-PRIME-MD ULTRA"
+    },
+    "AUTHOR": {
+      "description": "Author name for sticker metadata",
+      "required": false,
+      "value": "💎 PRIME TECHNOLOGIES"
     },
     "PREFIX": {
-      "description": "Bot command prefix(es) - separate multiple with comma (e.g., .,!,#)",
+      "description": "Allowed command prefixes (comma-separated, no spaces)",
       "required": true,
-      "value": "."
+      "value": "⚡,+,!,.,#,$"
+    },
+    "TIME_ZONE": {
+      "description": "Your Time Zone (e.g., Africa/Nairobi, UTC)",
+      "required": false,
+      "value": "UTC"
+    },
+    "PAIRING_CODE": {
+      "description": "Set to 'false' to disable pairing code method",
+      "required": false,
+      "value": "true"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Set to 'on' to make the bot always appear online",
+      "required": false,
+      "value": "on"
+    },
+    "PRIME_GROUP": {
+      "description": "Prime WhatsApp group link",
+      "required": false,
+      "value": "https://whatsapp.com/channel/EFPRIMEMD"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string for database (optional)",
+      "required": false,
+      "value": ""
     },
     "HKEY": {
-      "description": "Heroku API Key - Get from https://dashboard.heroku.com/account",
-      "required": true,
+      "description": "Heroku API key - Get one from https://dashboard.heroku.com/account",
+      "required": false,
       "value": ""
     },
     "HAPP": {
-      "description": "Heroku App Name - Must match your app name exactly",
-      "required": true,
+      "description": "Heroku app name (same as the app name above)",
+      "required": false,
       "value": ""
     },
-    "OWNER_NAME": {
-      "description": "Owner's display name",
+    "API_KEY": {
+      "description": "Prime API key for advanced features",
       "required": false,
-      "value": "FrankKaumbaDev"
+      "value": ""
     },
-    "AUTO_READ": {
-      "description": "Auto read messages (true/false)",
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini AI API key for AI features",
       "required": false,
-      "value": "true"
-    },
-    "PUBLIC_MODE": {
-      "description": "Public or private bot mode (true/false)",
-      "required": false,
-      "value": "true"
+      "value": ""
     }
   },
   "buildpacks": [
@@ -80,9 +110,15 @@
     }
   ],
   "formation": {
-    "worker": {
+    "web": {
       "quantity": 1,
       "size": "basic"
     }
-  }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:mini",
+      "as": "DATABASE"
+    }
+  ]
 }
