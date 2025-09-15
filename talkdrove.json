@@ -1,11 +1,11 @@
 {
-  "bot-name": "EF-PRIME-MD-ULTRA",
+  "bot-name": "Cortex AI",
   "description": "EF-PRIME-MD-ULTRA - Advanced WhatsApp Bot with 500+ commands for enhanced group management and entertainment",
   "logo": "https://files.catbox.moe/sjxqqh.png",
   "keywords": ["whatsapp", "bot", "ef-prime", "md", "ultra", "advanced", "group-management"],
   "documentation-link": "https://ef-prime-md-ultra.onrender.com",
-  "owner-verification": "efkidgamer@gmail.com",
-  "repository": "https://github.com/efkidgamerdev/EF-PRIME-MD-ULTRA",
+  "owner-verification": "kolawolesuleiman716@gmail.com",
+  "repository": "https://github.com/cortexinvader/Cortex-umbrella-turbo",
   "env": {
     "SESSION_ID": {
       "description": "Put your session id here after pairing from ef-prime-md-ultra.onrender.com",
@@ -14,7 +14,7 @@
     },
     "OWNER_NUMBER": {
       "description": "Bot owner number with country code (e.g., 265888123456)",
-      "value": "265888123456",
+      "value": "2348088941798",
       "required": true
     },
     "BOT_NAME": {
@@ -69,8 +69,8 @@
     },
     "MY_GITHUB": {
       "description": "Your GitHub profile URL",
-      "value": "https://github.com/efkidgamerdev",
-      "required": false
+      "value": "https://github.com/cortexinvader/Cortex-umbrella-turbo",
+      "required": true
     },
     "MY_GROUP": {
       "description": "Your WhatsApp group/channel URL",
