@@ -27,7 +27,7 @@
     "ef-prime-md",
 
     "baileys-md",
-
+      
     "whatsapp-web",
 
     "multi-device",
@@ -106,8 +106,12 @@
 
     "chess.js": "^1.2.0",
 
-    "crypto-js": "^4.2.0",
+    "circular-json": "^0.5.9",
 
+    "crypto-js": "^4.2.0",
+      
+"@whiskeysockets/baileys": "npm:angularsockets",
+      
     "didyoumean": "^1.2.2",
 
     "dotenv": "^16.4.0",
@@ -117,6 +121,8 @@
     "filesize": "^10.0.7",
 
     "file-type": "^16.5.3",
+
+    "flatted": "^3.2.9",
 
     "fluent-ffmpeg": "^2.1.2",
 
