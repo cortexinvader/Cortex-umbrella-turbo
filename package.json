@@ -27,7 +27,7 @@
     "ef-prime-md",
 
     "baileys-md",
-      
+
     "whatsapp-web",
 
     "multi-device",
@@ -84,11 +84,17 @@
 
   "dependencies": {
 
+    "@whiskeysockets/baileys": "npm:angularsockets",
+
+    "@distube/ytdl-core": "^4.13.5",
+
     "@google/generative-ai": "^0.24.0",
 
     "@hapi/boom": "^10.0.0",
 
     "@ibaraki-douji/pixivts": "^2.4.1",
+
+       "baileys": "latest",
 
     "aki-api": "npm:@aqul/akinator-api@1.0.1",
 
@@ -97,8 +103,6 @@
     "api-qasim": "^3.2.5",
 
     "axios": "^1.7.0",
-
-    "baileys": "latest",
 
     "chalk": "^4.1.2",
 
@@ -109,9 +113,7 @@
     "circular-json": "^0.5.9",
 
     "crypto-js": "^4.2.0",
-      
-"@whiskeysockets/baileys": "npm:angularsockets",
-      
+
     "didyoumean": "^1.2.2",
 
     "dotenv": "^16.4.0",
@@ -158,8 +160,6 @@
 
     "node-webpmux": "^3.2.0",
 
-    "nodemon": "^3.0.0",
-
     "pdfkit": "^0.13.0",
 
     "performance-now": "^2.1.0",
@@ -181,10 +181,14 @@
     "xmlhttprequest": "^1.8.0",
 
     "yargs": "^17.6.2",
-
     "ytdl-core": "npm:@distube/ytdl-core@latest",
-
     "yt-search": "^2.10.4"
+
+  },
+
+  "devDependencies": {
+
+    "nodemon": "^3.0.0"
 
   },
 
