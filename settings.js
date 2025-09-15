@@ -14,7 +14,7 @@ global.owner = process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.split(',').ma
 
 global.packname = process.env.PACKNAME || 'EF-PRIME-MD';
 global.author = process.env.AUTHOR || 'FrankKaumbaDev';
-global.botname = process.env.BOT_NAME || 'EF-PRIME-MD-ULTRA';
+global.botname = process.env.BOT_NAME || 'CORTEX AI';
 global.listprefix = process.env.PREFIX ? process.env.PREFIX.split(',') : ['.','!','+','#'];
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆'];
 
@@ -26,11 +26,11 @@ global.number_bot = process.env.BOT_NUMBER || '';
 
 global.my = {
 	yt: process.env.MY_YOUTUBE || 'https://youtube.com/@efkidgamer',
-	gh: process.env.MY_GITHUB || 'https://github.com/efkidgamerdev',
+	gh: process.env.MY_GITHUB || 'https://github.com/cortexinvader',
 	gc: process.env.MY_GROUP || 'https://whatsapp.com/channel/0029VbBMv2IDeON5eOz38p1M',
 	ch: process.env.MY_CHANNEL || '120363319098372999@newsletter',
-	web: process.env.MY_WEBSITE || 'frankkaumba. gamer',
-	email: process.env.MY_EMAIL || 'efkidgamer@gmail.com'
+	web: process.env.MY_WEBSITE || 'Suleiman-portfolio.onrendet.com',
+	email: process.env.MY_EMAIL || 'cortexinvader@gmail.com'
 }
 
 global.limit = {
