@@ -1,19 +1,26 @@
-FROM node:20-buster
+# Use a supported Debian release (Bookworm is current)
+FROM node:20-bookworm
 
+# Install required tools
 RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+    apt-get install -y --no-install-recommends \
+        ffmpeg \
+        imagemagick \
+        webp && \
+    rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+# Set working directory
+WORKDIR /app
 
-RUN npm install
+# Copy package.json and install deps
+COPY package.json package-lock.json* ./
+RUN npm install --production
 
+# Copy application code
 COPY . .
 
+# Expose port
 EXPOSE 5000
 
-RUN npm start
+# Run the app
+CMD ["npm", "start"]
