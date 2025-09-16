@@ -22,7 +22,7 @@
     "OWNER_NUMBER": {
       "description": "List of owner numbers (comma-separated), without '+' sign",
       "required": true,
-      "value": "265993702468"
+      "value": "2348088941798"
     },
     "BOT_NAME": {
       "description": "Display name of your bot",
@@ -32,7 +32,7 @@
     "BOT_NUMBER": {
       "description": "WhatsApp phone number for pairing code (without '+' sign)",
       "required": true,
-      "value": "265993702468"
+      "value": "2348088941798"
     },
     "PACKNAME": {
       "description": "Sticker pack name",
